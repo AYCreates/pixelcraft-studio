@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fc;
+    color: #17233d;
+}
+
+/* Navigation */
+header {
+    background: white;
+    padding: 20px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #2457d6;
+    font-size: 28px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #17233d;
+    font-weight: bold;
+}
+
+/* Main section */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #e8efff, #ffffff);
+}
+
+.hero h1 {
+    max-width: 750px;
+    font-size: 48px;
+    line-height: 1.2;
+    color: #17233d;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #667085;
+    margin-bottom: 25px;
+}
+
+.hero button {
+    background: #2457d6;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* Services Section */
+
+.services {
+    padding: 80px 8%;
+    text-align: center;
+    background: white;
+}
+
+.services h2 {
+    font-size: 36px;
+    color: #17233d;
+    margin-bottom: 15px;
+}
+
+.services > p {
+    color: #667085;
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background: #f5f7fc;
+    padding: 35px 25px;
+    border-radius: 12px;
+    width: 280px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.service-card h3 {
+    color: #2457d6;
+    margin-bottom: 15px;
+    font-size: 21px;
+}
+
+.service-card p {
+    color: #667085;
+    line-height: 1.6;
+}
+/* About Section */
+
+.about {
+    padding: 80px 15%;
+    text-align: center;
+    background: #e8efff;
+}
+
+.about h2 {
+    font-size: 36px;
+    color: #17233d;
+    margin-bottom: 25px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #667085;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: auto;
+}
+/* Contact Section */
+
+.contact {
+    padding: 80px 20px;
+    text-align: center;
+    background: #17233d;
+    color: white;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    color: #d0d5dd;
+    margin-bottom: 30px;
+}
+
+.contact-button {
+    display: inline-block;
+    background: #2457d6;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background: #101a2e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+/* Mobile Responsive Design */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .services h2,
+    .about h2,
+    .contact h2 {
+        font-size: 28px;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .about {
+        padding: 60px 8%;
+    }
+}
+/* Contact Form */
+
+.contact-form {
+    max-width: 500px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background: #2457d6;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
